@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n, Reverse = 0, Remainder;
+
+    cout<<"Enter Number : ";
+    cin>>n;
+
+    while(n > 0)
+    {
+        Remainder = n % 10;
+        Reverse = Reverse * 10 + Remainder;
+        n = n / 10;
+    }
+
+    cout<<"Reverse Number = "<<Reverse;
+
+    return 0;
+}
