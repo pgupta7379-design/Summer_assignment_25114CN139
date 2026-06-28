@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n, Product = 1, Remainder;
+
+    cout<<"Enter Number : ";
+    cin>>n;
+
+    while(n > 0)
+    {
+        Remainder = n % 10;
+        Product = Product * Remainder;
+        n = n / 10;
+    }
+
+    cout<<"Product of Digits = "<<Product;
+
+    return 0;
+}
